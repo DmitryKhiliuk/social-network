@@ -1,0 +1,47 @@
+.navbar {
+    background: aquamarine;
+    grid-area: navbar;
+    height: 100vh;
+    padding: 20px;
+}
+
+.item {
+    display: inline-block;
+    position: relative;
+    color: darkorange;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color .4s linear;
+    margin-top: 5px;
+}
+
+.item::after {
+    content: '';
+
+    width: 100%;
+    height: 2px;
+    display: block;
+    background-color: brown;
+    font-weight: bold;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    transition: opacity .4s linear;
+}
+
+.item:hover {
+    color: brown;
+
+}
+.item:hover::after {
+    opacity: 1;
+}
+
+.active {
+    color: darkorange;
+    font-weight: bold;
+    text-decoration: none;
+    opacity: .5;
+}

@@ -1,0 +1,10 @@
+.header {
+    background: antiquewhite;
+    grid-area: header;
+    height: 100px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
