@@ -1,12 +1,12 @@
 import React from 'react';
-import styles from './Profile.module.css'
-import picture from './../../../pictures/brick-ga17087dc0_1920.jpg'
+import {ProfileInfo} from "./ProfileInfo";
+import {PostsContainer} from "./PostContainer";
 
 export const Profile = () => {
     return (
-        <div className={styles.profile}>
-
-            Profile
+        <div >
+            <ProfileInfo/>
+            <PostsContainer/>
         </div>
     );
 };
